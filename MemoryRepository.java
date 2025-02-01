@@ -1,5 +1,7 @@
 import java.util.ArrayList;
-
+/**
+ * Memory-based implementation of a generic repository.
+ */
 public class MemoryRepository<T> implements Repository<T> {
     private final ArrayList<T> items = new ArrayList<>();
 
