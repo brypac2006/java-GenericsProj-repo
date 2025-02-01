@@ -20,7 +20,10 @@ public class MemoryRepository<T> implements Repository<T> {
         items.set(index, item);
     }
 
-    
+    @Override
+    public void delete(int index) {
+        items.remove(index);
+    }
 
     @Override
     public int size() {
